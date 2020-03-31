@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function(){
   $("form#inputForm").submit(function(event) {
     event.preventDefault();
@@ -17,21 +20,33 @@ $(document).ready(function(){
       }
 
     };
-
-    console.log(inputSentence);
-    
   });
-
 });
 
 
-// for (i=0; i < charactersToReplace.length; i++) {
-   
-//   inputSentence.replace(charactersToReplace[i], "-");
+$(document).ready(function(){
   
-//   }
-// 
 
-//if (inputSentence[i].includes(charactersToReplace)){}
+  var startingLuck = 0;
 
-//if ("The Letter H" has somewhere in it all of the following: ("A, E, I, O, U")) Then:
+  $("form#ourQuiz").submit(function(event) {
+    
+    event.preventDefault();
+    $("input:checkbox[name=luck]:checked").each(function() {
+      startingLuck += parseInt($(this).val());
+    });
+    console.log(startingLuck);
+    if (startingLuck >= 2) {
+      $("#goodFortune").show();
+    } 
+    else if (startingLuck <= (-2)) {
+      $("#badFortune").show();
+    } 
+    else {
+      $("#fortune").show(); 
+    }
+
+    
+  });
+  
+});

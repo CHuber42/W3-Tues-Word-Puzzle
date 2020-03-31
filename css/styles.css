@@ -1,0 +1,20 @@
+body {
+  background-image: url(https://media.giphy.com/media/xUOxf27UVwQtQalMLC/giphy.gif);
+  background-repeat: repeat;
+}
+
+#goodFortune {
+  display: none;
+}
+
+#badFortune {
+  display: none;
+}
+
+#fortune {
+  display: none;
+}
+
+button {
+  margin: 25px;
+}

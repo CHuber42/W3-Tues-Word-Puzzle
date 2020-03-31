@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 });
 
-// $("#output").textContent = ;
+
 // for (i=0; i < charactersToReplace.length; i++) {
    
 //   inputSentence.replace(charactersToReplace[i], "-");
